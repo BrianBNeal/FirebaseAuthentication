@@ -2,9 +2,9 @@
 {
     public class Cohort
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public CohortType Type { get; set; }
-        public int Number { get; set; }
+        public string LongName { get; set; }
         public List<Student> Students { get; set; }
         public List<Instructor> Instructors { get; set; }
     }
@@ -13,8 +13,5 @@
     {
         DaytimeWebDev = 0,
         EveningWebDev = 1,
-        DaytimeUIUX = 2,
-        DaytimeDataAnalytics = 3,
-        DaytimeDataScience = 4,
     }
 }
